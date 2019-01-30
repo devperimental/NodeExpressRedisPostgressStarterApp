@@ -1,0 +1,32 @@
+{
+  "name": "takefour",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node src/app.js",
+    "dev": "concurrently --kill-others \"nodemon --exec babel-node src/message-processor.js\" \"nodemon --exec babel-node src/app.js\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "@babel/plugin-transform-arrow-functions": "^7.2.0",
+    "@babel/preset-env": "^7.3.1",
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.9",
+    "sequelize-cli": "^5.4.0"
+  },
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "pg": "^7.8.0",
+    "pg-hstore": "^2.3.2",
+    "redis": "^2.8.0",
+    "sequelize": "^4.42.0"
+  }
+}
