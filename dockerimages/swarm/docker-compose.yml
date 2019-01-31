@@ -1,0 +1,11 @@
+version: '1'
+services:
+  web:
+    image: architectednet/xxx
+    command:  
+    ports:
+     - "8888:8888"
+    volumes:
+     - .:/xxxx
+  redis:
+    image: redis
